@@ -1,0 +1,60 @@
+.add {
+  width: 90%;              /* take more space */
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  color: #6d6d6d;
+  font-size: 18px;          /* slightly bigger text */
+}
+
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;                /* more spacing between sections */
+}
+
+.add-img-upload img {
+  width: 180px;             /* bigger upload icon */
+  cursor: pointer;
+}
+
+.add-product-name,
+.add-product-description {
+  width: 100%;              /* stretch across container */
+  max-width: 600px;         /* but don’t go too wide */
+}
+
+.add-product-description textarea,
+.add-product-name input {
+  width: 100%;              /* full width inside their container */
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-category-price {
+  display: flex;
+  gap: 30px;
+ }
+
+.add-category,
+.price {
+  flex: 1;
+  min-width: 250px;
+}
+
+.add-category-price select,.add-category-price input{
+    max-width: 120px;
+    padding: 10px;
+}
+
+.add-btn {
+  padding: 12px ;
+  background-color:black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 120px;
+}
