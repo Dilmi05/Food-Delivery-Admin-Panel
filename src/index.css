@@ -26,3 +26,8 @@
  .app-content{
    display: flex;
  }
+
+ .cursor{
+   cursor: pointer;
+
+ }

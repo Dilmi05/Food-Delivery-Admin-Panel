@@ -3,6 +3,7 @@ import './Add.css';
 import { assets } from "../../assets/assets";
 import { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const Add = () => {
 
@@ -15,6 +16,8 @@ const Add = () => {
         price: "",
         category: "salad"
     });
+
+
 
     const onChangeHandler = (event) => {
         const name = event.target.name;
@@ -45,9 +48,14 @@ const Add = () => {
                 }
             )
 
+            setImage(false)
+            toast.success(response.data.message)
+
         }
         else {
             setImage(false)
+
+            toast.error(response.data.message)
 
         }
 
